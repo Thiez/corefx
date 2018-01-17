@@ -127,7 +127,7 @@ namespace System.Json
                 byte[] bytes = Encoding.UTF8.GetBytes(EscapeString(pair.Key));
                 stream.Write(bytes, 0, bytes.Length);
                 stream.WriteByte((byte)'"');
-                stream.WriteByte((byte)',');
+                stream.WriteByte((byte)':');
                 stream.WriteByte((byte)' ');
                 if (pair.Value == null)
                 {
